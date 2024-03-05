@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <form action="processing.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="required"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="John@gmail.com"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept="video/*"><br>
+
+        <input type="checkbox" id="student" value="I am a student">
+        <label for="student">I am a student</label><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="car">Select Car:</label>
+        <select id="car" name="car" multiple>
+            <option value=""></option>
+            <option value="Toyota">Toyota</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+        </select><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="10" cols="25">
+            Type in your bio.
+        </textarea><br>
+
+        <input type="submit" value="Save details">
+    </form>
+</body>
+</html>
